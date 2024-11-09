@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+      "jsx": "react-jsx",
+      "jsxImportSource": "react",
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "module": "esnext",
+      "moduleResolution": "bundler",
+      "strict": true,
+      "types": ["react", "node"],
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["./(src)/*"],
+        "@/components/*": ["./(src)/(app)/components/*"],
+        "@/lib/*": ["./(src)/lib/*"],
+        "@/app/*": ["./(src)/(app)/*"]
+      },
+      "allowJs": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "resolveJsonModule": true,
+      "isolatedModules": true
+    },
+    "include": ["./(src)/**/*.ts", "./(src)/**/*.tsx"],
+    "exclude": ["node_modules"]
+}

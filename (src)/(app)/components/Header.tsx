@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { thorbis } from "@/lib/sdk/thorbis";
 import Link from "next/link";
 

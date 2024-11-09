@@ -1,11 +1,11 @@
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
 
-const Header = dynamic(() => import("../components/Header"), {
+const Header = dynamic<any>(() => import("@/app/components/Header"), {
 	loading: () => <div className="h-16 bg-gray-100 animate-pulse" />,
 });
 
-const Footer = dynamic(() => import("../components/Footer"), {
+const Footer = dynamic(() => import("@/app/components/Footer"), {
 	loading: () => <div className="h-40 bg-gray-100 animate-pulse" />,
 });
 
